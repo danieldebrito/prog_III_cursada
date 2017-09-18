@@ -1,7 +1,8 @@
 <?php
 require_once "clases\Empleado.php";
 require_once "clases\Fabrica.php";
-require_once "clases\GestionArchivos.php";
+require_once "archivos\GestionArchivos.php";
+
 
 $fabrica00 = new Fabrica("code utn s.a.");
 $emp00 = new Empleado("Ramone", "Joey", 2525456, "M", 00, 28000 );

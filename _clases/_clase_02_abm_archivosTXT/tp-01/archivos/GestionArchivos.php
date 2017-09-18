@@ -1,18 +1,18 @@
 <?php
-require_once "Fabrica.php";
-require_once "Empleado.php";
+require_once "clases\Fabrica.php";
+require_once "clases\Empleado.php";
 class GestionArchivos{
  
     public static function ReadFileTxt(){
-        $myfile = fopen("padronEmpleados.txt", "a") or die("Unable to open file!");
+        $myfile = fopen("archivos/padronEmpleados.txt", "a") or die("Unable to open file!");
         
-        echo fread($myfile,filesize("padronEmpleados.txt"));
+        echo fread($myfile,filesize("archivos/padronEmpleados.txt"));
         
         fclose($myfile);
     }
 
     public static function ReadSingleLinesTxt(){
-        $myfile = fopen("padronEmpleados.txt", "a") or die("Unable to open file!");
+        $myfile = fopen("archivos/padronEmpleados.txt", "a") or die("Unable to open file!");
         
         while(!feof($myfile)) {
             echo fgets($myfile)."</br>";
@@ -22,7 +22,7 @@ class GestionArchivos{
 
     public static function WhriteSingleLineTxt($emp){
         
-        $myfile = fopen("padronEmpleados.txt", "a") or die("Unable to open file!");
+        $myfile = fopen("archivos/padronEmpleados.txt", "a") or die("Unable to open file!");
         fwrite($myfile, $emp->getApellido()." ".$emp->getNombre()." ".$emp->getDni()." ".$emp->getSexo()." ".$emp->getLegajo()." ".$emp->getSueldo()."\n");
         fclose($myfile);
     }
@@ -30,7 +30,7 @@ class GestionArchivos{
     public static function ReadAndCharge(){
         $empleados = array();
 
-        $gestor = fopen("padronEmpleados.txt", "r");
+        $gestor = fopen("archivos/padronEmpleados.txt", "r");
         while ($userinfo = fscanf($gestor, "%s\t%s\t%u\t%s\t%u\t%f\n")) {
         list ($apellido, $nombre, $dni, $sexo, $legajo, $sueldo) = $userinfo;
         $empleado = new Empleado ($apellido, $nombre, $dni, $sexo, $legajo, $sueldo);
@@ -39,8 +39,5 @@ class GestionArchivos{
         fclose($gestor);
         return $empleados;
     }
-
-
-
 }
 ?> 
