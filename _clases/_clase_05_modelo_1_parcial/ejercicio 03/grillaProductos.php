@@ -1,0 +1,1 @@
+<!-- retorna una tabla de productos con la imagen coresp de cada prodcto -->
