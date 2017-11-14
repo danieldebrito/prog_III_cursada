@@ -1,0 +1,29 @@
+//  inserta campo, el id no esta por que es autoincremental
+INSERT INTO `persona`(`nombre`, `clave`) VALUES ('Daniel',1388)
+
+// borra todo
+SELECT * FROM `persona`
+
+// borra el id 15
+DELETE FROM `persona` WHERE id=15
+
+// borra un dato especifico, todos los natalia, no es key sensitive
+DELETE FROM `persona` WHERE nombre='naTAlia'
+
+//actualiza todos los nombres
+UPDATE `persona` SET `nombre`='Alguno'
+
+//trae claves
+SELECT`clave` FROM `persona`
+
+//asigna un alias y hace un par ordenado
+SELECT P.nombre, L.descripcion FROM `persona` AS P,`localidades` AS L
+
+// asigna un alias y relaciona p.localidad que tiene el "id" de localidad con el "id" de localidad
+SELECT P.nombre, L.descripcion FROM `persona` AS P,`localidades` AS L WHERE P.localidad = L.id
+
+Armando Quilmes
+Ramon Avellaneda
+Ramon Lanus
+Jonathan Quilmes
+......
