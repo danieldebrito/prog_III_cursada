@@ -1,0 +1,6 @@
+Daniel:dani@gmail.com:admin:38:1254:
+Pedro:pedro@gmail.com:usuario:28:9830
+Isabel:isabel@gmail.com:usuario:18:9750
+Geronimo:gero@gmail.com:usuario:48:9540:
+Ulises:uli@gmail.com:usuario:28:9213:
+Juan:juan@gmail.com:usuario:28:9590:

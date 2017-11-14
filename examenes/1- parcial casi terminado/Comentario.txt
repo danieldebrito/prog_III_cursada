@@ -1,0 +1,6 @@
+dani@gmail.com:coment con imagen:coment con imagen para todos ustedes macri toga:ImagenesDeComentario/coment con imagen.jpg:
+juan@gmail.com:boca:boca juniors buenos aires argentina:ImagenesDeComentario/boca.png:
+dani@gmail.com:php:programando en php:ImagenesDeComentario/php.png:
+gero@gmail.com:radiohead:radiohead the best band of england:ImagenesDeComentario/radiohead.jpg:
+isabel@gmail.com:android:androide paranoide:ImagenesDeComentario/android.jpg:
+pedro@gmail.com:ramones:gabba gabba hey:ImagenesDeComentario/ramones.jpg:
